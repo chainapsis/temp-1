@@ -4,7 +4,8 @@
   "packageManager": "yarn@4.7.0",
   "type": "module",
   "scripts": {
-    "build": "tsc && tsc-alias"
+    "clean": "rm -rf dist",
+    "build": "yarn clean && tsc && tsc-alias"
   },
   "publishConfig": {
     "access": "public"

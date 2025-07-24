@@ -13,6 +13,7 @@
     "removeComments": true,
     "noImplicitAny": true,
     "strict": true,
+    "declaration": true,
     "noImplicitThis": true,
     "noImplicitReturns": true,
     "noFallthroughCasesInSwitch": true,

@@ -17,6 +17,7 @@
     "allowSyntheticDefaultImports": true,
     "verbatimModuleSyntax": true,
     "esModuleInterop": true,
+    "declaration": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
     "resolveJsonModule": true,
