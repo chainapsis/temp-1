@@ -1,15 +1,19 @@
 {
   "name": "@keplr-ewallet/ewallet-sdk-cosmos",
+  "version": "0.0.1",
   "packageManager": "yarn@4.7.0",
   "type": "module",
-  "main": "./src/index.ts",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
+  "main": "./dist/index.js",
   "dependencies": {
+    "@keplr-ewallet/ewallet-sdk-core": "workspace:^",
     "@cosmjs/amino": "^0.33.1",
     "@cosmjs/proto-signing": "^0.33.1",
-    "@keplr-ewallet/ewallet-sdk-core": "workspace:*",
     "@keplr-wallet/cosmos": "^0.12.253",
     "@keplr-wallet/crypto": "^0.12.253",
     "@keplr-wallet/types": "^0.12.253",

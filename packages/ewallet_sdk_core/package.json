@@ -1,8 +1,12 @@
 {
   "name": "@keplr-ewallet/ewallet-sdk-core",
+  "version": "0.0.1",
   "packageManager": "yarn@4.7.0",
   "type": "module",
-  "main": "./src/index.ts",
+  "publishConfig": {
+    "access": "public"
+  },
+  "main": "./dist/index.js",
   "devDependencies": {
     "@types/jest": "*",
     "@types/node": "*",

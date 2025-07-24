@@ -1,6 +1,5 @@
 {
   "compilerOptions": {
-    "outDir": "dist", // Fallback in case if compilation runs
     "noEmit": true,
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true
