@@ -1,8 +1,11 @@
 {
   "name": "@keplr-ewallet/ewallet-sdk-core",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "packageManager": "yarn@4.7.0",
   "type": "module",
+  "scripts": {
+    "build": "tsc && tsc-alias"
+  },
   "publishConfig": {
     "access": "public"
   },
@@ -12,6 +15,7 @@
     "@types/node": "*",
     "jest": "*",
     "ts-jest": "*",
+    "tsc-alias": "*",
     "typescript": "*"
   }
 }
