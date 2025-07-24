@@ -1,0 +1,30 @@
+{
+  "name": "@keplr-ewallet/ewallet-sdk-cosmos",
+  "packageManager": "yarn@4.7.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest"
+  },
+  "dependencies": {
+    "@cosmjs/amino": "^0.33.1",
+    "@cosmjs/proto-signing": "^0.33.1",
+    "@keplr-ewallet/ewallet-sdk-core": "workspace:*",
+    "@keplr-wallet/cosmos": "^0.12.253",
+    "@keplr-wallet/crypto": "^0.12.253",
+    "@keplr-wallet/types": "^0.12.253",
+    "@noble/curves": "^1.9.2",
+    "@noble/hashes": "^1.8.0",
+    "bech32": "^2.0.0",
+    "cosmjs-types": "^0.9.0",
+    "jest": "*",
+    "ts-jest": "*"
+  },
+  "devDependencies": {
+    "@types/jest": "*",
+    "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "typescript": "*"
+  }
+}

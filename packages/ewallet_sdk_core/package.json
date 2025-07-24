@@ -1,0 +1,13 @@
+{
+  "name": "@keplr-ewallet/ewallet-sdk-core",
+  "packageManager": "yarn@4.7.0",
+  "type": "module",
+  "main": "./src/index.ts",
+  "devDependencies": {
+    "@types/jest": "*",
+    "@types/node": "*",
+    "jest": "*",
+    "ts-jest": "*",
+    "typescript": "*"
+  }
+}

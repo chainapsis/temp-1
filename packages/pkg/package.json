@@ -1,0 +1,8 @@
+{
+  "name": "@keplr-ewallet/pkg",
+  "packageManager": "yarn@4.7.0",
+  "main": "./src/index.ts",
+  "devDependencies": {
+    "tsx": "^4.20.3"
+  }
+}

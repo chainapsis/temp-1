@@ -1,0 +1,25 @@
+import { sendMsgToIframe } from "./window_msg";
+import { showModal } from "./api/show_modal";
+import { signIn } from "./api/sign_in";
+import { signOut } from "./api/sign_out";
+import { getPublicKey } from "./api/get_public_key";
+import { getEmail } from "./api/get_email";
+import { hideModal } from "./api/hide_modal";
+
+export class KeplrEWallet {
+  iframe: HTMLIFrameElement;
+  attachedEndpoint: string;
+
+  public constructor(iframe: HTMLIFrameElement, attachedEndpoint: string) {
+    this.iframe = iframe;
+    this.attachedEndpoint = attachedEndpoint;
+  }
+
+  showModal = showModal.bind(this);
+  hideModal = hideModal.bind(this);
+  sendMsgToIframe = sendMsgToIframe.bind(this);
+  signIn = signIn.bind(this);
+  signOut = signOut.bind(this);
+  getPublicKey = getPublicKey.bind(this);
+  getEmail = getEmail.bind(this);
+}

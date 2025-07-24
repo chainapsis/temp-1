@@ -1,0 +1,36 @@
+{
+  "private": true,
+  "workspaces": {
+    "packages": [
+      "packages/pkg",
+      "packages/ewallet_sdk_core",
+      "packages/ewallet_sdk_cosmos",
+      "packages/ewallet_sdk_eth"
+    ]
+  },
+  "packageManager": "yarn@4.7.0",
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@jest/globals": "^30.0.4",
+    "@types/bcrypt": "^5.0.2",
+    "@types/cors": "^2.8.17",
+    "@types/express": "^5",
+    "@types/jest": "^30.0.0",
+    "@types/morgan": "^1.9.9",
+    "@types/node": "^20",
+    "@types/nodemailer": "^6.4.17",
+    "@types/pg": "^8",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "@types/supertest": "^6.0.3",
+    "@types/swagger-jsdoc": "^6.0.4",
+    "@types/swagger-ui-express": "^4.1.8",
+    "@typescript-eslint/eslint-plugin": "^8.35.1",
+    "@typescript-eslint/parser": "^8.35.1",
+    "hardhat": "^2.25.0",
+    "prettier": "^3.6.2",
+    "typescript": "^5"
+  }
+}

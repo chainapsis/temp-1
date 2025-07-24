@@ -1,0 +1,29 @@
+{
+  "name": "@keplr-ewallet/ewallet-sdk-eth",
+  "packageManager": "yarn@4.7.0",
+  "main": "./src/index.ts",
+  "type": "module",
+  "scripts": {
+    "test": "NODE_OPTIONS=--experimental-vm-modules jest",
+    "test:debug": "yarn test --verbose",
+    "test:watch": "yarn test --watch",
+    "test:coverage": "yarn test --coverage",
+    "hardhat": "npx hardhat node"
+  },
+  "dependencies": {
+    "@keplr-ewallet/ewallet-sdk-core": "workspace:*",
+    "eventemitter3": "^5.0.1",
+    "viem": "*"
+  },
+  "devDependencies": {
+    "@types/jest": "*",
+    "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "ethers": "^6.14.4",
+    "hardhat": "*",
+    "jest": "*",
+    "ts-jest": "*",
+    "typescript": "*"
+  }
+}
