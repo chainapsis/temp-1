@@ -8,6 +8,7 @@ const GoogleClientId =
 const IframeOrigin = "http://localhost:3201/";
 
 export async function tryGoogleSignIn(
+  customerId: string,
   sendMsgToIframe: KeplrEWallet["sendMsgToIframe"],
 ) {
   const clientId = GoogleClientId;
@@ -15,6 +16,11 @@ export async function tryGoogleSignIn(
 
   console.log("window host: %s", window.location.host);
   console.log("redirectUri: %s", redirectUri);
+
+  const setCustomerIdAckPromise = sendMsgToIframe({
+    msg_type: "set_customer_id",
+    payload: customerId,
+  });
 
   const nonce = Array.from(crypto.getRandomValues(new Uint8Array(8)))
     .map((b) => b.toString(16).padStart(2, "0"))
@@ -52,6 +58,13 @@ export async function tryGoogleSignIn(
 
   if (!popup) {
     throw new Error("Failed to open new window for google oauth sign in");
+  }
+
+  // TODO: set customer id on init and remove this
+  const setCustomerIdAck = await setCustomerIdAckPromise;
+  if (!setCustomerIdAck.payload) {
+    popup.close();
+    throw new Error("Failed to set customer id for google oauth sign in");
   }
 
   const ack = await ackPromise;

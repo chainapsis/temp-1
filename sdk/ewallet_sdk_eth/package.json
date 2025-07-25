@@ -3,9 +3,37 @@
   "version": "0.0.3",
   "packageManager": "yarn@4.7.0",
   "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "type": "module",
   "publishConfig": {
     "access": "public"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    },
+    "./types": {
+      "types": "./dist/types/index.d.ts",
+      "import": "./dist/types/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "keplr",
+    "ewallet",
+    "ethereum",
+    "blockchain",
+    "wallet",
+    "evm",
+    "viem"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chainapsis/keplr-ewallet.git",
+    "directory": "sdk/ewallet_sdk_eth"
   },
   "scripts": {
     "clean": "del-cli dist",
