@@ -1,3 +1,5 @@
+import type { SignableMessage } from "viem";
+
 export type ShowModalPayload = MakeSignatureModalPayload | OtherModalPayload;
 
 export type ModalResponse = "approve" | "reject";
@@ -74,7 +76,7 @@ export type EthereumArbitrarySignPayload = {
   origin: string;
   chain_info: ChainInfoForAttachedModal;
   signer: string;
-  data: any;
+  data: SignableMessage;
 };
 
 export type EthereumEip712SignPayload = {
