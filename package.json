@@ -12,7 +12,7 @@
     "node": ">=22"
   },
   "dependencies": {
-    "viem": "2.31.7"
+    "viem": "^2.31.7"
   },
   "devDependencies": {
     "@jest/globals": "^30.0.4",

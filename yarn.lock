@@ -6140,7 +6140,7 @@ __metadata:
     prettier: "npm:^3.6.2"
     tsc-alias: "npm:^1.8.16"
     typescript: "npm:^5"
-    viem: "npm:2.31.7"
+    viem: "npm:^2.31.7"
   languageName: unknown
   linkType: soft
 
@@ -6937,7 +6937,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"viem@npm:*":
+"viem@npm:*, viem@npm:^2.31.7":
   version: 2.33.0
   resolution: "viem@npm:2.33.0"
   dependencies:
@@ -6955,27 +6955,6 @@ __metadata:
     typescript:
       optional: true
   checksum: 10c0/6ac61fc3a27f7587e231f916407e43588c2d2c31bbd9f58e8cd5a0bbbc792341e642930e8d0ec783b6809193571c415852bab415f422b5b21759ed0776f06674
-  languageName: node
-  linkType: hard
-
-"viem@npm:2.31.7":
-  version: 2.31.7
-  resolution: "viem@npm:2.31.7"
-  dependencies:
-    "@noble/curves": "npm:1.9.2"
-    "@noble/hashes": "npm:1.8.0"
-    "@scure/bip32": "npm:1.7.0"
-    "@scure/bip39": "npm:1.6.0"
-    abitype: "npm:1.0.8"
-    isows: "npm:1.0.7"
-    ox: "npm:0.8.1"
-    ws: "npm:8.18.2"
-  peerDependencies:
-    typescript: ">=5.0.4"
-  peerDependenciesMeta:
-    typescript:
-      optional: true
-  checksum: 10c0/b75d83e2af264bb4274dad6f6382db035d3231d1e1ae1d8ff9874d0368754f632124f486a76e6bf0a22236608f53292a55c3a57675e742b7c2f89e54fee60c8c
   languageName: node
   linkType: hard
 
