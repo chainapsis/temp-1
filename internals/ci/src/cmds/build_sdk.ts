@@ -1,22 +1,30 @@
-import { spawnSync } from "node:child_process";
+import { execSync, spawnSync } from "node:child_process";
 
 import { paths } from "../paths.ts";
 
-export async function buildSDK(...args: any[]) {
-  console.log("buildSDK, args: %j", args);
+export async function buildSDK(..._args: any[]) {
+  console.info("Start building SDKs...");
 
-  // spawnSync("yarn", ["run", "build"], {
-  //   cwd: paths.cait_sith_addon_addon,
-  //   stdio: "inherit",
-  // });
-  //
-  // spawnSync("yarn", ["run", "build:wasm"], {
-  //   cwd: paths.cait_sith_keplr_wasm,
-  //   stdio: "inherit",
-  // });
-  //
-  // spawnSync("yarn", ["run", "copy:wasm"], {
-  //   cwd: paths.ewallet_attached,
-  //   stdio: "inherit",
-  // });
+  console.info("Build sdk-core, path: %s", paths.sdk_core);
+  execSync("yarn run build", {
+    cwd: paths.sdk_core,
+    stdio: "inherit",
+  });
+  console.info("Ok");
+
+  console.info("Build sdk-cosmos, path: %s", paths.sdk_cosmos);
+  execSync("yarn run build", {
+    cwd: paths.sdk_cosmos,
+    stdio: "inherit",
+  });
+  console.info("Ok");
+
+  console.log("Build sdk-eth, path: %s", paths.sdk_eth);
+  execSync("yarn run build", {
+    cwd: paths.sdk_eth,
+    stdio: "inherit",
+  });
+  console.info("Ok");
+
+  console.info("All done!");
 }
