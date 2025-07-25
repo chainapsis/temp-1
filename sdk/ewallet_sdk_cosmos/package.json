@@ -22,6 +22,7 @@
     "@noble/curves": "^1.9.2",
     "@noble/hashes": "^1.8.0",
     "bech32": "^2.0.0",
+    "bitcoinjs-lib": "^6.1.7",
     "cosmjs-types": "^0.9.0"
   },
   "devDependencies": {
