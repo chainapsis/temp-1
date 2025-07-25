@@ -11,10 +11,6 @@
     "access": "public"
   },
   "main": "./dist/index.js",
-  "exports": {
-    ".": "./dist/index.js",
-    "./types": "./dist/types/index.js"
-  },
   "devDependencies": {
     "@types/jest": "*",
     "@types/node": "*",

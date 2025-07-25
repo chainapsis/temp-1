@@ -1,4 +1,5 @@
-export type * from "./ewallet";
-export type * from "./result";
-export type * from "./msg";
-export type * from "./sign";
+export * from "./ewallet";
+export * from "./result";
+export * from "./msg";
+export * from "./sign";
+export * from "./modal";

@@ -16,10 +16,6 @@
     "test:coverage": "yarn test --coverage",
     "hardhat": "npx hardhat node"
   },
-  "exports": {
-    ".": "./dist/index.js",
-    "./types": "./dist/types/index.js"
-  },
   "dependencies": {
     "@keplr-ewallet/ewallet-sdk-core": "workspace:*",
     "eventemitter3": "^5.0.1",
