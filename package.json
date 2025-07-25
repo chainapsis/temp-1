@@ -2,10 +2,9 @@
   "private": true,
   "workspaces": {
     "packages": [
-      "packages/pkg",
-      "packages/ewallet_sdk_core",
-      "packages/ewallet_sdk_cosmos",
-      "packages/ewallet_sdk_eth"
+      "sdk/ewallet_sdk_core",
+      "sdk/ewallet_sdk_cosmos",
+      "sdk/ewallet_sdk_eth"
     ]
   },
   "packageManager": "yarn@4.7.0",
