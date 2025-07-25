@@ -2964,8 +2964,10 @@ __metadata:
     "@cosmjs/amino": "npm:^0.33.1"
     "@cosmjs/proto-signing": "npm:^0.33.1"
     "@keplr-ewallet/ewallet-sdk-core": "workspace:*"
+    "@keplr-wallet/common": "npm:^0.12.253"
     "@keplr-wallet/cosmos": "npm:^0.12.253"
     "@keplr-wallet/crypto": "npm:^0.12.253"
+    "@keplr-wallet/simple-fetch": "npm:^0.12.253"
     "@keplr-wallet/types": "npm:^0.12.253"
     "@noble/curves": "npm:^1.9.2"
     "@noble/hashes": "npm:^1.8.0"
@@ -3062,7 +3064,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@keplr-wallet/common@npm:0.12.253":
+"@keplr-wallet/common@npm:0.12.253, @keplr-wallet/common@npm:^0.12.253":
   version: 0.12.253
   resolution: "@keplr-wallet/common@npm:0.12.253"
   dependencies:
@@ -3359,7 +3361,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@keplr-wallet/simple-fetch@npm:0.12.253":
+"@keplr-wallet/simple-fetch@npm:0.12.253, @keplr-wallet/simple-fetch@npm:^0.12.253":
   version: 0.12.253
   resolution: "@keplr-wallet/simple-fetch@npm:0.12.253"
   checksum: 10c0/a33061ea664015b9831286baf834ab5f4d68af71bfd1fb16b585e4972d2299999c751e312b1b98906a9c7cccc0fa7f9926829248d939a63ef5c008c6da60edff

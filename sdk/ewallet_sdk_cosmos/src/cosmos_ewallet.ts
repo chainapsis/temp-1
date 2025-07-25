@@ -10,6 +10,7 @@ import {
   getOfflineSigner,
   getOfflineSignerAuto,
   getOfflineSignerOnlyAmino,
+  sendTx,
   signAmino,
   signArbitrary,
   signDirect,
@@ -89,6 +90,7 @@ export class CosmosEWallet {
   getOfflineSignerAuto = getOfflineSignerAuto.bind(this);
   getKey = getKey.bind(this);
   getKeysSettled = getKeysSettled.bind(this);
+  sendTx = sendTx.bind(this);
   signAmino = signAmino.bind(this);
   signDirect = signDirect.bind(this);
   signArbitrary = signArbitrary.bind(this);

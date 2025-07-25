@@ -1,9 +1,9 @@
+import { Buffer } from "buffer";
 import type { StdSignDoc } from "@cosmjs/amino";
 import { serializeSignDoc } from "@cosmjs/amino";
 import { Hash, PubKeySecp256k1 } from "@keplr-wallet/crypto";
 
 import { getBech32Address, getCosmosAddress, getEthAddress } from "./address";
-import { Buffer } from "buffer";
 
 export function makeADR36AminoSignDoc(
   signer: string,
