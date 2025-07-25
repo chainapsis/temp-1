@@ -19,17 +19,17 @@ export type ChainInfoForAttachedModal = {
   readonly chain_symbol_image_url?: string;
 };
 
-type MakeCosmosSigData =
+export type MakeCosmosSigData =
   | {
-    chain_type: "cosmos";
-    sign_type: "tx";
-    payload: CosmosTxSignPayload;
-  }
+      chain_type: "cosmos";
+      sign_type: "tx";
+      payload: CosmosTxSignPayload;
+    }
   | {
-    chain_type: "cosmos";
-    sign_type: "arbitrary";
-    payload: CosmosArbitrarySignPayload;
-  };
+      chain_type: "cosmos";
+      sign_type: "arbitrary";
+      payload: CosmosArbitrarySignPayload;
+    };
 
 export type CosmosTxSignPayload = {
   origin: string;
@@ -46,24 +46,23 @@ export type CosmosArbitrarySignPayload = {
   origin: string;
 };
 
-type MakeEthereumSigData =
+export type MakeEthereumSigData =
   | {
-    chain_type: "eth";
-    sign_type: "tx";
-    payload: EthereumTxSignPayload;
-  }
+      chain_type: "eth";
+      sign_type: "tx";
+      payload: EthereumTxSignPayload;
+    }
   | {
-    chain_type: "eth";
-    sign_type: "arbitrary";
-    payload: EthereumArbitrarySignPayload;
-  }
+      chain_type: "eth";
+      sign_type: "arbitrary";
+      payload: EthereumArbitrarySignPayload;
+    }
   | {
-    chain_type: "eth";
-    sign_type: "eip712";
-    payload: EthereumEip712SignPayload;
-  };
+      chain_type: "eth";
+      sign_type: "eip712";
+      payload: EthereumEip712SignPayload;
+    };
 
-//NOTE 아직 확정된 타입이 아닌 임의로 만들어 둔거라서 실제 sign 작업할때 수정 필요 @retto
 export type EthereumTxSignPayload = {
   origin: string;
   chain_info: ChainInfoForAttachedModal;
