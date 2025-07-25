@@ -12,6 +12,10 @@
     "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
   "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./types": "./dist/types/index.js"
+  },
   "dependencies": {
     "@cosmjs/amino": "^0.33.1",
     "@cosmjs/proto-signing": "^0.33.1",

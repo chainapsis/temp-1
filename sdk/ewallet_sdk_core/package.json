@@ -5,12 +5,16 @@
   "type": "module",
   "scripts": {
     "clean": "rm -rf dist && rm tsconfig.tsbuildinfo",
-    "build": "yarn clean && tsc && tsc-alias"
+    "build": "tsc && tsc-alias"
   },
   "publishConfig": {
     "access": "public"
   },
   "main": "./dist/index.js",
+  "exports": {
+    ".": "./dist/index.js",
+    "./types": "./dist/types/index.js"
+  },
   "devDependencies": {
     "@types/jest": "*",
     "@types/node": "*",
