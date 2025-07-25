@@ -7,7 +7,7 @@
     "access": "public"
   },
   "scripts": {
-    "clean": "rm -rf dist",
+    "clean": "del-cli dist",
     "build": "yarn clean && tsc && tsc-alias",
     "test": "NODE_OPTIONS=--experimental-vm-modules jest"
   },
@@ -32,6 +32,7 @@
     "@types/node": "*",
     "@typescript-eslint/eslint-plugin": "*",
     "@typescript-eslint/parser": "*",
+    "del-cli": "*",
     "jest": "*",
     "ts-jest": "*",
     "tsc-alias": "*",

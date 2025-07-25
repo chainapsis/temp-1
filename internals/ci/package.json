@@ -1,0 +1,20 @@
+{
+  "name": "@keplr-ewallet/ci",
+  "packageManager": "yarn@4.7.0",
+  "scripts": {
+    "start": "tsx src/main.ts"
+  },
+  "dependencies": {
+    "commander": "*",
+    "jest": "*"
+  },
+  "devDependencies": {
+    "@types/jest": "*",
+    "@types/node": "*",
+    "@typescript-eslint/eslint-plugin": "*",
+    "@typescript-eslint/parser": "*",
+    "ts-jest": "*",
+    "tsx": "*",
+    "typescript": "*"
+  }
+}
