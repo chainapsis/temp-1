@@ -4,8 +4,8 @@
   "packageManager": "yarn@4.7.0",
   "type": "module",
   "scripts": {
-    "clean": "rm -rf dist && rm tsconfig.tsbuildinfo",
-    "build": "yarn clean && tsc && tsc-alias"
+    "clean": "del-cli dist",
+    "build": "tsc && tsc-alias"
   },
   "publishConfig": {
     "access": "public"
@@ -14,6 +14,7 @@
   "devDependencies": {
     "@types/jest": "*",
     "@types/node": "*",
+    "del-cli": "*",
     "jest": "*",
     "ts-jest": "*",
     "tsc-alias": "*",

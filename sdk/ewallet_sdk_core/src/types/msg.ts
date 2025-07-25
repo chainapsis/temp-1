@@ -52,15 +52,15 @@ export type EWalletMsgOAuthSignIn = {
 export type EWalletMsgOAuthSignInAck = {
   msg_type: "oauth_sign_in_ack";
   payload:
-  | {
-    success: true;
-    wallet_id: string;
-    public_key: string;
-  }
-  | {
-    success: false;
-    error: string;
-  };
+    | {
+        success: true;
+        wallet_id: string;
+        public_key: string;
+      }
+    | {
+        success: false;
+        error: string;
+      };
 };
 
 export type EWalletMsgSignOut = {
@@ -128,6 +128,6 @@ export type EWalletMsg =
   | EWalletMsgGetEmail
   | EWalletMsgGetEmailAck
   | {
-    msg_type: "unknown";
-    payload: string | null;
-  };
+      msg_type: "unknown";
+      payload: string | null;
+    };

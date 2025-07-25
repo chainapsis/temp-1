@@ -1,0 +1,22 @@
+.wrapper {
+
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: hsl(0, 0%, 96.1%);
+  min-width: 100vw;
+
+  border: 1px solid gray;
+
+  // & > div {
+  //   flex-grow: 1;
+  // }
+}
+
+.previewPanel {
+  flex-grow: 1;
+}
+

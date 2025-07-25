@@ -64,4 +64,13 @@ export interface ICosmosEWallet {
     data: string | Uint8Array,
     signature: StdSignature,
   ) => Promise<boolean>;
+  sendTx: (
+    chainId: string,
+    tx: unknown,
+    mode: "async" | "sync" | "block",
+    options?: {
+      silent?: boolean;
+      onFulfill?: (tx: any) => void;
+    },
+  ) => Promise<Uint8Array>;
 }

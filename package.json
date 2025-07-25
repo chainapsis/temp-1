@@ -2,14 +2,20 @@
   "private": true,
   "workspaces": {
     "packages": [
+      "internals/ci",
       "sdk/ewallet_sdk_core",
       "sdk/ewallet_sdk_cosmos",
-      "sdk/ewallet_sdk_eth"
+      "sdk/ewallet_sdk_eth",
+      "sdk/sandboxes/sandbox_evm",
+      "sdk/sandboxes/sandbox_osmosis"
     ]
   },
   "packageManager": "yarn@4.7.0",
   "engines": {
     "node": ">=22"
+  },
+  "scripts": {
+    "ci": "yarn --cwd ./internals/ci run start"
   },
   "dependencies": {
     "viem": "^2.31.7"
@@ -31,6 +37,7 @@
     "@types/swagger-ui-express": "^4.1.8",
     "@typescript-eslint/eslint-plugin": "^8.35.1",
     "@typescript-eslint/parser": "^8.35.1",
+    "del-cli": "^6.0.0",
     "hardhat": "^2.25.0",
     "prettier": "^3.6.2",
     "tsc-alias": "^1.8.16",

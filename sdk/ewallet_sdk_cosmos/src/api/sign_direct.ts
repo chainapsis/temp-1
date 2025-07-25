@@ -13,13 +13,13 @@ export async function signDirect(
   chainId: string,
   signer: string,
   signDoc: SignDoc,
-  origin: string,
   signOptions?: KeplrSignOptions,
 ): Promise<DirectSignResponse> {
   try {
     const signBytes = SignDoc.encode(signDoc).finish();
     const signDocHash = sha256(signBytes);
     const publicKey = await this.getPublicKey();
+    const origin = this.eWallet.origin;
     console.log("signDirect @@@@@", signDoc, origin);
 
     const signDocWrapper = SignDocWrapper.fromDirectSignDoc({
