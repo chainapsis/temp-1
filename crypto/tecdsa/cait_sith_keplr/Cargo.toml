@@ -1,0 +1,41 @@
+[package]
+name = "cait_sith_keplr"
+description = "Threshold ECDSA via Triples"
+repository = "https://github.com/cronokirby/cait-sith"
+version = "0.8.0"
+edition = "2021"
+license = "MIT"
+
+# [build]
+# rustflags = ["--cfg", "getrandom_backend=\"linux_getrandom\""] 
+
+[dependencies]
+auto_ops = "0.3.0"
+ck-meow = "0.1.0"
+digest = "0.10.7"
+ecdsa = { version = "0.16.8", features = ["digest", "hazmat"] }
+elliptic-curve = { version = "0.13.5", features = ["serde"] }
+k256 = { version = "0.13.4", features = ["sha256", "ecdsa", "serde"], optional = true }
+magikitten = "0.2.0"
+rmp-serde = "1.1.2"
+serde = { version = "1.0.175", features = ["derive"] }
+subtle = "2.5.0"
+rand_core = { version = "0.6.4", features = ["getrandom"] }
+getrandom = { version = "0.2", features = ["js"] }
+
+# temp
+# event-listener = { version = "2.5.3", optional = true }
+# smol = { version = "1.3.0", optional = true }
+# serde_json = { version = "1.0" }
+# rand = "0.9.0"
+
+[dev-dependencies]
+criterion = "0.4"
+easy-parallel = "3.2.0"
+haisou-chan = { git = "https://github.com/cronokirby/haisou-chan", rev = "d28c46e51acfcb818236caae293f6e56dff41ad2" }
+structopt = "0.3.26"
+
+[features]
+default = ["k256"]
+k256 = ["dep:k256"]
+# async = ["dep:smol", "dep:event-listener"]
