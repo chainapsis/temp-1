@@ -15,7 +15,7 @@
   "dependencies": {
     "@cosmjs/amino": "^0.33.1",
     "@cosmjs/proto-signing": "^0.33.1",
-    "@keplr-ewallet/ewallet-sdk-core": "workspace:^",
+    "@keplr-ewallet/ewallet-sdk-core": "workspace:*",
     "@keplr-wallet/cosmos": "^0.12.253",
     "@keplr-wallet/crypto": "^0.12.253",
     "@keplr-wallet/types": "^0.12.253",

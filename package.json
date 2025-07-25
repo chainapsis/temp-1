@@ -11,6 +11,9 @@
   "engines": {
     "node": ">=22"
   },
+  "dependencies": {
+    "viem": "2.31.7"
+  },
   "devDependencies": {
     "@jest/globals": "^30.0.4",
     "@types/bcrypt": "^5.0.2",

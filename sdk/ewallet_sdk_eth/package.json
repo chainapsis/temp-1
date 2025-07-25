@@ -17,7 +17,7 @@
     "hardhat": "npx hardhat node"
   },
   "dependencies": {
-    "@keplr-ewallet/ewallet-sdk-core": "workspace:^",
+    "@keplr-ewallet/ewallet-sdk-core": "workspace:*",
     "eventemitter3": "^5.0.1",
     "viem": "*"
   },
