@@ -13,5 +13,5 @@ export async function getOfflineSignerAuto(
   if (key.isNanoLedger) {
     return this.getOfflineSignerOnlyAmino(chainId, signOptions);
   }
-  return this.getOfflineSigner(chainId, "", signOptions);
+  return this.getOfflineSigner(chainId, signOptions);
 }

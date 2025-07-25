@@ -9,10 +9,12 @@ import { hideModal } from "./api/hide_modal";
 export class KeplrEWallet {
   iframe: HTMLIFrameElement;
   attachedEndpoint: string;
+  origin: string;
 
   public constructor(iframe: HTMLIFrameElement, attachedEndpoint: string) {
     this.iframe = iframe;
     this.attachedEndpoint = attachedEndpoint;
+    this.origin = window.location.origin;
   }
 
   showModal = showModal.bind(this);
