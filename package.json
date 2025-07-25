@@ -4,7 +4,9 @@
     "packages": [
       "sdk/ewallet_sdk_core",
       "sdk/ewallet_sdk_cosmos",
-      "sdk/ewallet_sdk_eth"
+      "sdk/ewallet_sdk_eth",
+      "sdk/sandboxes/sandbox_evm",
+      "sdk/sandboxes/sandbox_cosmos"
     ]
   },
   "packageManager": "yarn@4.7.0",

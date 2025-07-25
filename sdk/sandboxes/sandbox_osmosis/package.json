@@ -1,0 +1,52 @@
+{
+  "name": "sandbox-osmosis",
+  "packageManager": "yarn@4.7.0",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "tsx launch.ts",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@chain-registry/osmosis": "^1.17.0",
+    "@cosmjs/amino": "^0.34.0",
+    "@cosmjs/proto-signing": "^0.33.1",
+    "@cosmjs/stargate": "^0.34.0",
+    "@cosmos-kit/core": "^2.16.1",
+    "@cosmos-kit/keplr": "^2.15.1",
+    "@cosmos-kit/react": "^2.22.1",
+    "@interchain-ui/react": "^1.23.14",
+    "@keplr-ewallet/ewallet-sdk-core": "workspace:*",
+    "@keplr-ewallet/ewallet-sdk-cosmos": "workspace:*",
+    "@keplr-ewallet/stdlib-js": "workspace:*",
+    "@keplr-wallet/proto-types": "^0.12.250",
+    "@osmosis-labs/math": "^5.1.0",
+    "@osmosis-labs/stores": "^5.1.0",
+    "assert": "^2.1.0",
+    "buffer": "^6.0.3",
+    "chain-registry": "^1.17.0",
+    "crypto-browserify": "^3.12.1",
+    "next": "^15.3.5",
+    "process": "^0.11.10",
+    "react": "^19.1.0",
+    "react-dom": "^19.1.0",
+    "sass": "^1.89.2",
+    "stream-browserify": "^3.0.0",
+    "util": "^0.12.5",
+    "viem": "^2.21.53",
+    "wagmi": "^2.12.26",
+    "zustand": "^5.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "*",
+    "@types/react": "*",
+    "@types/react-dom": "*",
+    "autoprefixer": "^10.4.16",
+    "postcss": "~8.4.45",
+    "tailwindcss": "^3.3.6",
+    "tsx": "^4.20.3",
+    "typescript": "^5"
+  }
+}
