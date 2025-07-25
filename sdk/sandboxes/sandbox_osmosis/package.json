@@ -20,7 +20,6 @@
     "@interchain-ui/react": "^1.23.14",
     "@keplr-ewallet/ewallet-sdk-core": "workspace:*",
     "@keplr-ewallet/ewallet-sdk-cosmos": "workspace:*",
-    "@keplr-ewallet/stdlib-js": "workspace:*",
     "@keplr-wallet/proto-types": "^0.12.250",
     "@osmosis-labs/math": "^5.1.0",
     "@osmosis-labs/stores": "^5.1.0",
