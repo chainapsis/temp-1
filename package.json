@@ -3,6 +3,9 @@
   "workspaces": {
     "packages": [
       "internals/ci",
+      "credential_vault/pg_interface",
+      "credential_vault/server",
+      "crypto/tecdsa/tecdsa_interface",
       "sdk/ewallet_sdk_core",
       "sdk/ewallet_sdk_cosmos",
       "sdk/ewallet_sdk_eth",
